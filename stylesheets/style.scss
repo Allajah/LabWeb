@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#title{
+  background: #054B05;
+  margin: 0;
+  color: white;
+  h1{
+    font-size: 64pt;
+    margin:0;
+  }
+  p{
+    margin-left: 1%;
+  }
+}
+
+#contents {
+  margin: 0;
+  width: 90%;
+  height: 100%;
+  background: #ddd;
+  float: right;
+}
+
+#sidebar{
+  width:  10%;
+  height: 100%;
+  float: left;
+  background: #888;
+}
