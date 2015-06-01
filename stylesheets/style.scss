@@ -1,3 +1,6 @@
+//variables
+$content-width :90%;
+
 body{
   margin: 0;
   padding: 0;
@@ -18,12 +21,19 @@ body{
 
 #contents {
   margin: 0;
-  width: 90%;
+  width: $content-width;
   height: 100%;
-  background: #ddd;
+  background: #fff;
   float: right;
 }
-
+.black{
+  height:800px;
+  background-color:#323232;
+}
+.blue{
+  height: 800px;
+  background-color:#262677;
+}
 #sidebar{
   width:  10%;
   height: 100%;
