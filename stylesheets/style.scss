@@ -1,21 +1,44 @@
 //variables
 $content-width :90%;
-
+$title_height: 48px;
+html{
+  font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
 body{
   margin: 0;
   padding: 0;
+  background-color: #fff;
+  background-image: url("../images/background1.png")
 }
 
+img#logo{
+  height:40px;
+  margin:auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
 #title{
-  background: #054B05;
-  margin: 0;
-  color: white;
+  background: #fff;
+  //box-shadow: 0 3px;
+  border-bottom: 1px solid #000;
+  position: fixed !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $title_height;
   h1{
-    font-size: 64pt;
-    margin:0;
-  }
+    font-size: 16pt;
+    margin: 0;
+   }
   p{
-    margin-left: 1%;
+    margin:0 1%;
+    font-size: 8pt;
+    
   }
 }
 
@@ -23,20 +46,31 @@ body{
   margin: 0;
   width: $content-width;
   height: 100%;
-  background: #fff;
   float: right;
 }
 .black{
   height:800px;
   background-color:#323232;
+  width:90%;
+  margin: 30px auto;
+  border-radius: 20px;
 }
-.blue{
-  height: 800px;
-  background-color:#262677;
+.red{
+  height:800px;
+  background-color:#f46060;
+  width:90%;
+  margin: 30px auto;
+  border-radius: 20px;
+  opacity: 0.5;
 }
 #sidebar{
   width:  10%;
   height: 100%;
+  position: fixed;
+  top: $title_height;
   float: left;
   background: #888;
+}
+#blank{
+  height:20px;
 }
