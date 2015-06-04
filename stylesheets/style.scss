@@ -8,8 +8,10 @@ body{
   margin: 0;
   padding: 0;
   background-color: #fff;
-  background-image: url("../images/background1.png");
-  background-size: cover;
+  //background-image: url("../images/background1.png");
+  background-image: url('http://www.transparenttextures.com/patterns/asfalt-dark.png'); 
+  //background-size: cover;
+  background-attachment: fixed;
 }
 
 img#logo{
@@ -30,16 +32,17 @@ img#logo{
   position: absolute;
   top: 0;
   left: 0;
+  z-index:1;
   width: 100%;
   height: $title_height;
   h1{
     font-size: 16pt;
     margin: 0;
-   }
+  }
   p{
     margin:0 1%;
     font-size: 8pt;
-    
+
   }
 }
 
@@ -49,20 +52,12 @@ img#logo{
   height: 100%;
   float: right;
 }
-.black{
-  height:800px;
-  background-color:#323232;
-  width:90%;
-  margin: 30px auto;
-  border-radius: 20px;
-}
-.red{
-  height:800px;
-  background-color:#f46060;
-  width:90%;
-  margin: 30px auto;
-  border-radius: 20px;
-  opacity: 0.5;
+.box{
+  height: 500px;
+  width:100%;
+  margin: 0 auto;
+  padding-left: 8px;
+  //border-radius: 20px;
 }
 #sidebar{
   width:  10%;
@@ -70,8 +65,11 @@ img#logo{
   position: fixed;
   top: $title_height;
   float: left;
-  background: #888;
+  background: #fff;
 }
 #blank{
-  height:20px;
+  height:28px;
+  margin:0 0;
 }
+
+
